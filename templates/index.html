@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+            
+{% block content %}
+    <h2><div class="title1">Исходное изображение</div></h2>
+    <h2><div class="title2">Результат распознавания</div></h2>
+    <div class='clear'></div>
+    <div class="metanav1"></div>
+    <div class="metanav2"></div>
+    <div class='clear'></div>
+    <div class="icon1_block">
+        <img src='static/image/documents.png'>
+        <h2>Открыть изображение</h2>
+    </div>
+    <div class="icon2_block">
+        <img src='static/image/titles.png'>
+        <h2>Начать распознавание</h2>
+    </div>
+    <div class="icon3_block">
+        <img src='static/image/slide.png'>
+        <h2>Сохранить результат</h2>    
+    </div>
+    <div class='clear'></div>
+    <div class="operation">Выполняется распознавание...</div>
+{% endblock %}
