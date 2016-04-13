@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>OCR</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="page">
+              <h1>OCR программа для распознавания</h1>
+              {% block body %}{% endblock %}
+            </div>
+            <ul class='menu'>
+				<li>Меню</li>
+				<li>Справка</li>
+            </ul>
+            <div class='clear'></div>
+            <h2><div class="title1">Исходное изображение</div></h2>
+            <h2><div class="title2">Результат распознавания</div></h2>
+            <div class='clear'></div>
+            <div class="metanav1"></div>
+            <div class="metanav2"></div>
+            <div class='clear'></div>
+            <div class="icon1_block">
+                <img src='static/image/documents.png'>
+                <h2>Открыть изображение</h2>
+            </div>
+            <div class="icon2_block">
+                <img src='static/image/titles.png'>
+                <h2>Начать распознавание</h2>
+            </div>
+            <div class="icon3_block">
+                <img src='static/image/slide.png'>
+                <h2>Сохранить результат</h2>    
+            </div>
+            <div class='clear'></div>
+            <div class="operation">Выполняется распознавание...</div>
+        </div>
+    </div>
+</body>
+</html>
