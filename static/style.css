@@ -21,14 +21,18 @@ body {
     background: #eee;
 }
 
-a, h1, h2{ color: #377BA8; }
-h1, h2{ 
+a, h1, h2, li{ color: #377BA8; }
+h1, h2, .metanav2 li{ 
     font-family: 'Georgia', serif;
     margin: 0; 
 }
 h1 { border-bottom: 2px solid #eee; }
-h2 {
+h2, .metanav2 li {
     margin: 15px;
+}
+
+.metanav2 li {
+    font-size: 20px;
 }
 
 .page{
@@ -37,19 +41,19 @@ h2 {
     float: left;
 }
 
-.menu{
+#menu{
     margin: 60px 10px 0px 15px;  
     float: right;
     font-family: 'Georgia', serif;
     font-size: 28px;
-    color: red;
 }
 
-.menu li{
+#menu li{
     list-style: none;
     display: inline;
     padding: 10px;
     cursor: pointer;
+    color: red;
 }
 
 .title1{
