@@ -1,8 +1,13 @@
 from flask import Flask, url_for,  render_template, flash, redirect
 from forms import LoginForm
+from flask.ext.sqlalchemy import SQLAlchemy
+
 
 app = Flask(__name__)
 app.config.from_object('config')
+db = SQLAlchemy(app)
+
+import models
 
 #@app.route("/")
 #def hello():
